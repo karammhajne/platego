@@ -1,0 +1,121 @@
+/*body {
+    font-family: Arial, sans-serif;
+    height: 640px;
+    width: 360px;
+   /* margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}*/
+
+.top-header {
+    height: 123px;
+    width: 360px;
+    margin-left: 500px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e0e0e0;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.top-header .menu {
+    margin-left: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.top-header .menu .san {
+
+    margin-left: -500px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.top-header .menu .ring {
+
+    margin-left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.top-header .logo img {
+    height: 40px;
+}
+
+.top-header .profile {
+    display: flex;
+    align-items: center;
+}
+
+.top-header .profile span {
+    margin-right: 10px;
+}
+
+.top-header .profile img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.search-section {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-section input,
+.search-section select {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#report-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px;
+}
+
+#report-list li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+#report-list li img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#report-list li div {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+#report-list li .status {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#report-details {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
