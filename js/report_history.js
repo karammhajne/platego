@@ -21,20 +21,28 @@ function displayReports(reportList) {
         const li = document.createElement("li");
         li.innerHTML = `
             <img src="${report.image}" alt="Car Image">
-            <div>
-                <p>${report.plate} - ${report.reason}</p>
-                <p>${report.location}</p>
-                <p>${report.date}</p>
-            </div>
-            <div class="status">
-                ${report.urgent ? '<span>⚠️</span>' : ''}
-                ${report.status === 'done' ? '<span>✔️</span>' : ''}
+            <div class="report-details">
+                <div class="info">
+                    <p>${report.plate} ${report.reason}</p>
+                </div>
+                <div class="pipe">
+                    <span>&#124;</span>
+                </div>
+                <div class="location-time">
+                    <p>${report.location}</p>
+                    <p>${report.date}</p>
+                </div>
+                <div class="status">
+                    ${report.urgent ? '<span>⚠️</span>' : ''}
+                    ${report.status === 'done' ? '<span>✔️</span>' : ''}
+                </div>
             </div>
         `;
         li.onclick = () => displayReportDetails(index);
         reportListElement.appendChild(li);
     });
 }
+
 
 function displayReportDetails(index) {
     const report = reports[index];
