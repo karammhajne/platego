@@ -53,15 +53,7 @@
             "date": "2024-01-12T19:34:00Z",
             "status": "undone",
             "urgent": true
-        },
-        {
-            "image": "path/to/car7.jpg",
-            "plate": "54-667-37",
-            "reason": "lights on",
-            "location": "Einstein 55, Tel Aviv",
-            "date": "2023-12-28T22:15:00Z",
-            "status": "done",
-            "urgent": false
         }
+       
     ]
 }

@@ -59,30 +59,6 @@ function filterReports() {
     displayReports(filteredReports);
 }
 
-function sortReports() {
-    const sort = document.getElementById("sort").value;
-    let sortedReports = [...reports];
-    if (sort === 'newest') {
-        sortedReports.sort((a, b) => new Date(b.date) - new Date(a.date));
-    } else if (sort === 'oldest') {
-        sortedReports.sort((a, b) => new Date(a.date) - new Date(b.date));
-    } else if (sort === 'urgentFirst') {
-        sortedReports.sort((a, b) => b.urgent - a.urgent);
-    } else if (sort === 'nonUrgentFirst') {
-        sortedReports.sort((a, b) => a.urgent - b.urgent);
-    }
-    displayReports(sortedReports);
-}
-
-function searchReports() {
-    const search = document.getElementById("search").value.toLowerCase();
-    const filteredReports = reports.filter(report =>
-        report.reason.toLowerCase().includes(search) ||
-        report.location.toLowerCase().includes(search) ||
-        report.plate.toLowerCase().includes(search)
-    );
-    displayReports(filteredReports);
-}
 
 function goBack() {
     window.history.back();
