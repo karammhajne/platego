@@ -1,11 +1,11 @@
 {
     "reports": [
         {
-            "image": "path/to/car1.jpg",
+            "image": "images/tshirt1.png",
             "plate": "38-439-69",
             "reason": "car blocking",
             "location": "Herzl 88, Ramat Gan",
-            "date": "2024-03-01T08:15:00Z",
+            "date": "2024-03-01 15:00",
             "status": "done",
             "urgent": true
         },

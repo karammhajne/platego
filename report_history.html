@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script defer src="js/report_history.js"></script>
     <title>Report History</title>
 </head>
@@ -14,30 +15,27 @@
             <span class="ring">&#128276;</span>
         </div>
         <div class="logo">
-            <img src="path/to/logo.png" alt="Plate&Go">
+            <img src="images/clothify.png" alt="Plate&Go">
         </div>
         <div class="profile">
             <span>Welcome Alon</span>
-            <img src="path/to/profile.jpg" alt="Profile Picture">
+            <img src="images/tshirt1.png" alt="Profile Picture">
+        </div>
+        <div class="main">
+            <img src="images/search.png" alt="search icon">
+            <img src="images/message.png" alt="message icon">
+            <img src="images/car.png" alt="car icon">
+            <i class="back fa-solid fa-arrow-left"></i>
+
+
         </div>
     </header>
-    <div class="search-section">
-        <input type="text" id="search" placeholder="Search Report" oninput="searchReports()">
-        <select id="filter" onchange="filterReports()">
-            <option value="all">Filter</option>
-            <option value="urgent">Urgent</option>
-            <option value="done">Done</option>
-            <option value="undone">Undone</option>
-        </select>
-        <select id="sort" onchange="sortReports()">
-            <option value="newest">Sort by</option>
-            <option value="newest">Newest First</option>
-            <option value="oldest">Oldest First</option>
-            <option value="urgentFirst">Urgent First</option>
-            <option value="nonUrgentFirst">Non-Urgent First</option>
-        </select>
+    <div class="container">
+        <h3>report history</h3>
     </div>
+    <div class="group">
     <ul id="report-list"></ul>
     <div id="report-details" class="hidden"></div>
+</div>
 </body>
 </html>
