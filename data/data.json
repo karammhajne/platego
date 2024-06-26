@@ -1,7 +1,7 @@
 {
     "reports": [
         {
-            "image": "images/tshirt1.png",
+            "image": "images/car1.jpg",
             "plate": "38-439-69",
             "reason": "car blocking",
             "location": "Herzl 88, Ramat Gan",
@@ -10,7 +10,7 @@
             "urgent": true
         },
         {
-            "image": "path/to/car2.jpg",
+            "image": "images/car2.jpg",
             "plate": "77-348-39",
             "reason": "child forgotten",
             "location": "Tikva 15, Petah Tikva",
@@ -19,7 +19,7 @@
             "urgent": true
         },
         {
-            "image": "path/to/car3.jpg",
+            "image": "images/car3.jpg",
             "plate": "54-667-37",
             "reason": "lights on",
             "location": "Bialek 76, Ramat Gan",
@@ -28,8 +28,8 @@
             "urgent": false
         },
         {
-            "image": "path/to/car4.jpg",
-            "plate": "38-439-69",
+            "image": "images/car4.jpeg",
+            "plate": "623-50-701",
             "reason": "car blocking",
             "location": "Rotcheld 27, Tel Aviv",
             "date": "2024-02-05T11:55:00Z",
@@ -37,8 +37,8 @@
             "urgent": false
         },
         {
-            "image": "path/to/car5.jpg",
-            "plate": "38-439-69",
+            "image": "images/car5.jpg",
+            "plate": "590-69-602",
             "reason": "car blocking",
             "location": "Yarden 37, Ramat Gan",
             "date": "2024-02-02T09:05:00Z",
@@ -46,22 +46,13 @@
             "urgent": true
         },
         {
-            "image": "path/to/car6.jpg",
-            "plate": "77-348-39",
+            "image": "images/car6.png",
+            "plate": "454-05-503",
             "reason": "child forgotten",
             "location": "Shalom 9, Ramat Gan",
             "date": "2024-01-12T19:34:00Z",
             "status": "undone",
             "urgent": true
-        },
-        {
-            "image": "path/to/car7.jpg",
-            "plate": "54-667-37",
-            "reason": "lights on",
-            "location": "Einstein 55, Tel Aviv",
-            "date": "2023-12-28T22:15:00Z",
-            "status": "done",
-            "urgent": false
         }
     ]
 }
