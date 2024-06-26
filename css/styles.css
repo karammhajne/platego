@@ -172,3 +172,65 @@ font-size: 18px;
     align-items: block;
 
 }
+#report-details {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#delete-report {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 600px;
+    margin-right: 10px;
+    display: absolute;
+}
+#contact-report {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 600px;
+    margin-right: 10px;
+    display: absolute;
+}
+
+
+
+.container {
+    position: relative;
+}
+
+#bottom-half {
+    position: relative;
+}
+
+#map-image {
+    position: absolute;
+    margin-left: -50px;
+    margin-top: 100px;
+    width: 350px;
+    height: 300px;
+}
+
+
+#car-image {
+    position: absolute;
+    top: 0;
+    margin-left: 300px;
+    width: 150px;
+    height: auto;
+}
+
+#action-section {
+    display: flex;
+    justify-content: space-between;
+}
+

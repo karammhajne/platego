@@ -37,6 +37,8 @@ function displayReports(reportList) {
 }
 
 function displayReportDetails(index) {
+    navigateToReportDetails(index); 
+
     const report = reports[index];
     const reportDetailsElement = document.getElementById("report-details");
     reportDetailsElement.innerHTML = `
@@ -49,6 +51,7 @@ function displayReportDetails(index) {
     `;
     reportDetailsElement.classList.remove("hidden");
 }
+
 
 function filterReports() {
     const filter = document.getElementById("filter").value;
@@ -86,4 +89,9 @@ function searchReports() {
 
 function goBack() {
     window.history.back();
+}
+function navigateToReportDetails(index) {
+    if (index === 0) {
+        window.location.href = 'report_details.html';
+    }
 }
