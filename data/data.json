@@ -7,7 +7,8 @@
             "location": "Herzl 88, Ramat Gan",
             "date": "24-3-1 15:00",
             "status": "undone",
-            "urgent": true
+            "urgent": true ,
+            "map": "images/map.jpg"
         },
         {
             "image": "images/car2.jpg",
@@ -16,7 +17,8 @@
             "location": "rotcheld 15, Petah Tikva",
             "date": "24-03-01 8:05",
             "status": "undone",
-            "urgent": true
+            "urgent": true ,
+            "map": "images/map2.png"
         },
         {
             "image": "images/car3.jpg",
@@ -25,7 +27,8 @@
             "location": "Bialek 76, Ramat Gan",
             "date": "24-2-12 19:37",
             "status": "done",
-            "urgent": false
+            "urgent": false ,
+            "map": "images/map3.png"
         },
         {
             "image": "images/car4.jpeg",
@@ -34,7 +37,8 @@
             "location": "Rotcheld 27,  Tel Aviv",
             "date": "24-2-5 11:55",
             "status": "done",
-            "urgent": false
+            "urgent": false ,
+            "map": "images/map4.png"
         },
         {
             "image": "images/car5.jpg",
@@ -43,7 +47,8 @@
             "location": "Yarden 37, Ramat Gan",
             "date": "24-2-2 09:05",
             "status": "done",
-            "urgent": false
+            "urgent": false ,
+            "map": "images/map5.png"
         },
         {
             "image": "images/car6.png",
@@ -52,7 +57,8 @@
             "location": "Shalom 9, Ramat Gan",
             "date": "24-1-7 19:34",
             "status": "done",
-            "urgent": false
+            "urgent": false ,
+            "map": "images/map6.png"
         }
        
     ]
