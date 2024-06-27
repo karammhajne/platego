@@ -26,15 +26,19 @@ function displayReportDetails(index) {
         <p><strong>Status:</strong> ${report.status}</p>
         <p><strong>Urgency:</strong> ${report.urgent ? "Yes" : "No"}</p>
     `;
+    const reportImageElement = document.getElementById("report-image");
+    reportImageElement.innerHTML = `<img src="${report.image}" alt="Car Image" style="width: 100%;">`;
     reportDetailsElement.dataset.index = index;
 }
 
 function deleteReport() {
-    const reportDetailsElement = document.getElementById("report-details");
-    const index = reportDetailsElement.dataset.index;
-    reports.splice(index, 1);
-    saveReports();
-    goBack();
+    if (confirm("Are you sure you want to delete this report?")) {
+        const reportDetailsElement = document.getElementById("report-details");
+        const index = reportDetailsElement.dataset.index;
+        reports.splice(index, 1);
+        saveReports();
+        window.location.href = "index.html";
+    }
 }
 
 function saveReports() {

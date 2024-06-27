@@ -84,7 +84,7 @@ body {
     height: 40px;
     width: 40px;
     margin-top: 25px;
-    display: absolute; /* החלפת display ל-position */
+    display: absolute;
     cursor: pointer;
 }
 
@@ -194,3 +194,18 @@ p {
     flex-wrap: wrap;
     width: 400px;
 }
+
+#report-details{
+    padding:10px;
+}
+
+#report-image {
+    width: 180px;
+    height: 180px;
+    margin-top: -470px;
+    margin-left: 150px;
+    padding: 20px;
+    text-align: center;
+}
+
+
