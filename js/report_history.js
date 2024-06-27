@@ -23,13 +23,15 @@ function displayReports(reportList) {
             <img src="${report.image}" alt="Car Image">
             <div class="report-details">
                 <div class="info">
-                    <p>${report.plate} ${report.reason}</p>
+                    <p>${report.plate} <br> ${report.reason}</p>
                 </div>
                 <div class="pipe">
                     <span>&#124;</span>
                 </div>
-                <div class="location-time">
+                <div class="location">
                     <p>${report.location}</p>
+                </div>
+                <div class="date">
                     <p>${report.date}</p>
                 </div>
                 <div class="status">
@@ -38,15 +40,13 @@ function displayReports(reportList) {
                 </div>
             </div>
         `;
-        li.onclick = () => displayReportDetails(index);
+        li.onclick = () => openReportDetails(index);
         reportListElement.appendChild(li);
     });
 }
 
 
 function displayReportDetails(index) {
-    navigateToReportDetails(index); 
-
     const report = reports[index];
     const reportDetailsElement = document.getElementById("report-details");
     reportDetailsElement.innerHTML = `
@@ -60,7 +60,6 @@ function displayReportDetails(index) {
     reportDetailsElement.classList.remove("hidden");
 }
 
-
 function filterReports() {
     const filter = document.getElementById("filter").value;
     let filteredReports = reports;
@@ -69,7 +68,6 @@ function filterReports() {
     }
     displayReports(filteredReports);
 }
-
 
 function goBack() {
     window.history.back();

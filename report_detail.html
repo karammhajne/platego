@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script defer src="js/report_history.js"></script>
-    <title>Report-History</title>
+    <script defer src="js/report_detail.js"></script>
+    <title>Report Details</title>
 </head>
 <body>
     <header class="top-header">
@@ -27,16 +27,13 @@
             <img src="images/car.png" alt="car icon">    
         </div>
         <div class="back">
-            <a href="https://www.figma.com/design/UTJ6nsYGY5xfG0JZf0mFaP/Plate%26Go?node-id=0-1" class="back-button">
-            <i class="fa-solid fa-arrow-left"></i>
-        </a>
+            <i class="fa-solid fa-arrow-left" onclick="goBack()"></i>
         </div>
     </header>
     <div class="container">
-        <h3>report history</h3>
-    </div>
-    <div class="group">
-        <ul id="report-list"></ul>
+        <h3>Report Details</h3>
+        <div id="report-details"></div>
+        <button id="delete-button" onclick="deleteReport()">Delete Report</button>
     </div>
 </body>
 </html>
