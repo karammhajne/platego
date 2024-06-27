@@ -37,7 +37,7 @@ function deleteReport() {
         const index = reportDetailsElement.dataset.index;
         reports.splice(index, 1);
         saveReports();
-        window.location.href = "index.html";
+        window.location.href = "report_history.html";
     }
 }
 
