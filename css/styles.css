@@ -4,7 +4,7 @@ body {
     width: 360px;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #e0dede;
 }
 
 .top-header {
@@ -15,7 +15,6 @@ body {
     justify-content: space-between;
     background-color: #ccc;
     padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .top-header .menu {
@@ -26,13 +25,13 @@ body {
 
 .top-header .menu .san {
     margin-left: -500px;
-    font-size: 24px;
+    font-size: 18px;
     cursor: pointer;
 }
 
 .top-header .menu .ring {
     margin-left: 10px;
-    font-size: 24px;
+    font-size: 18px;
     cursor: pointer;
 }
 
@@ -78,12 +77,13 @@ body {
 .main img {
     height: 40px;
     width: 40px;
+    cursor: pointer;
 }
 
 .back {
     height: 40px;
     width: 40px;
-    margin-top: 25px;
+    margin-top: 30px;
     display: absolute;
     cursor: pointer;
 }
@@ -194,3 +194,105 @@ p {
     flex-wrap: wrap;
     width: 400px;
 }
+<<<<<<< HEAD
+=======
+
+#report-details p{
+    margin-top:-20px;
+    gap: 10px;
+}
+
+#report-image {
+    display: absolute;
+    width: 180px;
+    height: 180px;
+    margin-top: -360px;
+    margin-left: 150px;
+    padding: 20px;
+    
+}
+#report-map {
+    
+    display: absolute;
+    width:400px;
+    height: 300px;
+    margin-left: -50px;
+    margin-top: 130px;
+   
+}
+
+#delete-button{
+    position: absolute;
+    color:white;
+    background-color:red;
+    margin-top: -300px;
+    margin-left: 120px;
+    cursor: pointer;
+}
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 10px; 
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content p {
+    font-size: 18px;
+    text-decoration: row;
+    margin: 0 120px;
+    text-align: center;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+.btn-confirm {
+    background-color: red;
+    color: white;
+    border: 10px solid red;
+}
+
+.btn-cancel {
+    background-color: white;
+    color: red;
+}
+>>>>>>> a632ebf0e5e4a7e2b8505090ece3dca53d0ac148
