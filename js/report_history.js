@@ -21,20 +21,28 @@ function displayReports(reportList) {
         const li = document.createElement("li");
         li.innerHTML = `
             <img src="${report.image}" alt="Car Image">
-            <div>
-                <p>${report.plate} - ${report.reason}</p>
-                <p>${report.location}</p>
-                <p>${report.date}</p>
-            </div>
-            <div class="status">
-                ${report.urgent ? '<span>⚠️</span>' : ''}
-                ${report.status === 'done' ? '<span>✔️</span>' : ''}
+            <div class="report-details">
+                <div class="info">
+                    <p>${report.plate} ${report.reason}</p>
+                </div>
+                <div class="pipe">
+                    <span>&#124;</span>
+                </div>
+                <div class="location-time">
+                    <p>${report.location}</p>
+                    <p>${report.date}</p>
+                </div>
+                <div class="status">
+                    ${report.urgent ? '<span>⚠️</span>' : ''}
+                    ${report.status === 'done' ? '<span>✔️</span>' : ''}
+                </div>
             </div>
         `;
         li.onclick = () => displayReportDetails(index);
         reportListElement.appendChild(li);
     });
 }
+
 
 function displayReportDetails(index) {
     navigateToReportDetails(index); 
@@ -62,30 +70,6 @@ function filterReports() {
     displayReports(filteredReports);
 }
 
-function sortReports() {
-    const sort = document.getElementById("sort").value;
-    let sortedReports = [...reports];
-    if (sort === 'newest') {
-        sortedReports.sort((a, b) => new Date(b.date) - new Date(a.date));
-    } else if (sort === 'oldest') {
-        sortedReports.sort((a, b) => new Date(a.date) - new Date(b.date));
-    } else if (sort === 'urgentFirst') {
-        sortedReports.sort((a, b) => b.urgent - a.urgent);
-    } else if (sort === 'nonUrgentFirst') {
-        sortedReports.sort((a, b) => a.urgent - b.urgent);
-    }
-    displayReports(sortedReports);
-}
-
-function searchReports() {
-    const search = document.getElementById("search").value.toLowerCase();
-    const filteredReports = reports.filter(report =>
-        report.reason.toLowerCase().includes(search) ||
-        report.location.toLowerCase().includes(search) ||
-        report.plate.toLowerCase().includes(search)
-    );
-    displayReports(filteredReports);
-}
 
 function goBack() {
     window.history.back();
