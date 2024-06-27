@@ -9,24 +9,26 @@ function displayReportDetails() {
         return;
     }
 
+ 
+
+
     const reports = [
         {
             image: "images/car1.jpg",
             plate: "38-439-69",
             reason: "car blocking",
             location: "Herzl 88, Ramat Gan",
-            date: "2024-03-01 15:00",
-            status: "in progress",
+            date: "24-3-1 15:00",
+            status: "undone",
             urgent: true,
-            mapImage: "images/location1.jpg",
+            mapImage: "images/map.jpeg",
             messages: [
-                { text: "Message received", status: "received" },
-                { text: "Replied", status: "replied" }
+                { text: "Message received" },
+                { text: "Replied" }
             ],
             estimatedTime: "5 min",
-            done: false
-        },
-       
+            done: true
+        }
     ];
 
     const report = reports[reportIndex];
@@ -45,13 +47,14 @@ function displayReportDetails() {
         <p><strong>Estimated time:</strong> ${report.estimatedTime}</p>
         <p><strong>Done:</strong> ${report.done ? "Yes" : "No"}</p>
         <p><strong>Date:</strong> ${report.date}</p>
+        <p><strong>Time:</strong> 8:15</p>
     `;
 
-    const reportImageElement = document.getElementById("report-image");
     const carImageElement = document.getElementById("car-image");
-
-    reportImageElement.src = report.mapImage;
     carImageElement.src = report.image;
+
+    const mapImageElement = document.getElementById("map-image");
+    mapImageElement.src = report.mapImage;
 }
 
 document.getElementById("delete-report").addEventListener("click", () => {

@@ -195,20 +195,23 @@ p{
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 600px;
-    margin-right: 10px;
+    margin-top: 390px;
     display: absolute;
+    align-items: center;
+    margin-left: 100px;
 }
 #contact-report {
+    height:30px;
     background-color: blue;
     color: white;
     padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 600px;
-    margin-right: 10px;
+    margin-top: 150px;
+    margin-left: 270px;
     display: absolute;
+
 }
 
 
@@ -223,23 +226,23 @@ p{
 
 #map-image {
     position: absolute;
-    margin-left: -50px;
-    margin-top: 100px;
-    width: 350px;
-    height: 300px;
+    margin-left: -40px;
+    margin-top: 200px;
+    width: 360px;
+    height: 350px;
 }
 
 
 #car-image {
     position: absolute;
     top: 0;
-    margin-left: 300px;
-    width: 150px;
+    margin-left: 170px;
+    margin-top: 0px;
+    width: 180px;
     height: auto;
 }
 
 #action-section {
-    display: flex;
+    display: absolute;
     justify-content: space-between;
 }
-
