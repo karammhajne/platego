@@ -84,7 +84,7 @@ body {
     height: 40px;
     width: 40px;
     margin-top: 25px;
-    display: absolute; /* החלפת display ל-position */
+    display: absolute;
     cursor: pointer;
 }
 
@@ -193,69 +193,4 @@ p {
     display: absolute;
     flex-wrap: wrap;
     width: 400px;
-}
-#report-details {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-#delete-report {
-    background-color: red;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 390px;
-    display: absolute;
-    align-items: center;
-    margin-left: 100px;
-}
-#contact-report {
-    height:30px;
-    background-color: blue;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 150px;
-    margin-left: 270px;
-    display: absolute;
-
-}
-
-
-
-.container {
-    position: relative;
-}
-
-#bottom-half {
-    position: relative;
-}
-
-#map-image {
-    position: absolute;
-    margin-left: -40px;
-    margin-top: 200px;
-    width: 360px;
-    height: 350px;
-}
-
-
-#car-image {
-    position: absolute;
-    top: 0;
-    margin-left: 170px;
-    margin-top: 0px;
-    width: 180px;
-    height: auto;
-}
-
-#action-section {
-    display: absolute;
-    justify-content: space-between;
 }
