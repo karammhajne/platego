@@ -45,35 +45,10 @@ function displayReports(reportList) {
     });
 }
 
-
-function displayReportDetails(index) {
-    const report = reports[index];
-    const reportDetailsElement = document.getElementById("report-details");
-    reportDetailsElement.innerHTML = `
-        <h2>Report Details</h2>
-        <p><strong>Reason:</strong> ${report.reason}</p>
-        <p><strong>Location:</strong> ${report.location}</p>
-        <p><strong>Date:</strong> ${report.date}</p>
-        <p><strong>Status:</strong> ${report.status}</p>
-        <p><strong>Urgency:</strong> ${report.urgent ? "Yes" : "No"}</p>
-    `;
-    reportDetailsElement.classList.remove("hidden");
-}
-
-function filterReports() {
-    const filter = document.getElementById("filter").value;
-    let filteredReports = reports;
-    if (filter !== 'all') {
-        filteredReports = reports.filter(report => report.status === filter);
-    }
-    displayReports(filteredReports);
+function openReportDetails(index) {
+    window.location.href = `report_detail.html?index=${index}`;
 }
 
 function goBack() {
     window.history.back();
-}
-function navigateToReportDetails(index) {
-    if (index === 0) {
-        window.location.href = 'report_details.html';
-    }
 }

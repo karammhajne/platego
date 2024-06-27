@@ -20,25 +20,38 @@ function displayReportDetails(index) {
     const report = reports[index];
     const reportDetailsElement = document.getElementById("report-details");
     reportDetailsElement.innerHTML = `
-        <p><strong>Reason:</strong> ${report.reason}</p>
-        <p><strong>Location:</strong> ${report.location}</p>
-        <p><strong>Date:</strong> ${report.date}</p>
-        <p><strong>Status:</strong> ${report.status}</p>
-        <p><strong>Urgency:</strong> ${report.urgent ? "Yes" : "No"}</p>
+        <p><strong>Plate:</strong><br> ${report.plate} 
+        <strong>Reason:</strong> <br>${report.reason}
+        <strong>Location:</strong><br> ${report.location}
+        <strong>Date:</strong><br> ${report.date}
+        <strong>Status:</strong> <br>${report.status}
+        <strong>Urgent:</strong><br> ${report.urgent ? "Yes" : "No"}</p>
     `;
     const reportImageElement = document.getElementById("report-image");
     reportImageElement.innerHTML = `<img src="${report.image}" alt="Car Image" style="width: 100%;">`;
     reportDetailsElement.dataset.index = index;
+
+    const reportMapElement = document.getElementById("report-map");
+    reportMapElement.innerHTML = `<img src="${report.map}" alt="Car Image" style="width: 100%;">`;
+    reportDetailsElement.dataset.index = index;
 }
 
 function deleteReport() {
-    if (confirm("Are you sure you want to delete this report?")) {
-        const reportDetailsElement = document.getElementById("report-details");
-        const index = reportDetailsElement.dataset.index;
-        reports.splice(index, 1);
-        saveReports();
-        window.location.href = "report_history.html";
-    }
+    const modal = document.getElementById("confirmModal");
+    modal.style.display = "block";
+}
+
+function confirmDelete() {
+    const reportDetailsElement = document.getElementById("report-details");
+    const index = reportDetailsElement.dataset.index;
+    reports.splice(index, 1);
+    saveReports();
+    window.location.href = "report_history.html";
+}
+
+function cancelDelete() {
+    const modal = document.getElementById("confirmModal");
+    modal.style.display = "none";
 }
 
 function saveReports() {
