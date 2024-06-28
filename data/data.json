@@ -8,13 +8,13 @@
             "date": "24-3-1 15:00",
             "status": "undone",
             "urgent": true ,
-            "map": "images/map.jpg"
+            "map": "images/map.png"
         },
         {
             "image": "images/car2.jpg",
             "plate": "77-348-39",
             "reason": "child forgotten",
-            "location": "rotcheld 15, Petah Tikva",
+            "location": "rothschild 15, Petah Tikva",
             "date": "24-03-01 8:05",
             "status": "undone",
             "urgent": true ,
@@ -26,7 +26,7 @@
             "reason": "lights on",
             "location": "Bialek 76, Ramat Gan",
             "date": "24-2-12 19:37",
-            "status": "done",
+            "status": "call done",
             "urgent": false ,
             "map": "images/map3.png"
         },
@@ -36,7 +36,7 @@
             "reason": "car blocking",
             "location": "Rotcheld 27,  Tel Aviv",
             "date": "24-2-5 11:55",
-            "status": "done",
+            "status": "call done",
             "urgent": false ,
             "map": "images/map4.png"
         },
@@ -46,7 +46,7 @@
             "reason": "car blocking",
             "location": "Yarden 37, Ramat Gan",
             "date": "24-2-2 09:05",
-            "status": "done",
+            "status": "call done",
             "urgent": false ,
             "map": "images/map5.png"
         },
@@ -56,7 +56,7 @@
             "reason": "child forgotten",
             "location": "Shalom 9, Ramat Gan",
             "date": "24-1-7 19:34",
-            "status": "done",
+            "status": "call done",
             "urgent": false ,
             "map": "images/map6.png"
         }

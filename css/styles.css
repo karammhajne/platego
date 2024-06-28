@@ -1,3 +1,6 @@
+
+
+
 body {
     font-family: Arial, sans-serif;
     height: 640px;
@@ -107,6 +110,15 @@ body {
     font-size: 16px;
 }
 
+#report-list li .fa-trash {
+    color: red;
+    cursor: pointer;
+    margin-top: -80px;
+    margin-left: 0px;
+    align-self: center;
+}
+
+
 .group {
     padding: 300px;
     margin-top: -500px;
@@ -201,17 +213,17 @@ p {
 }
 
 #report-image {
-    display: absolute;
+    display: flex;
     width: 180px;
     height: 180px;
-    margin-top: -360px;
+    margin-top: -320px;
     margin-left: 150px;
     padding: 20px;
     
 }
 #report-map {
     
-    display: absolute;
+    display: flex;
     width:400px;
     height: 300px;
     margin-left: -50px;
@@ -223,7 +235,7 @@ p {
     position: absolute;
     color:white;
     background-color:red;
-    margin-top: -300px;
+    margin-top: -320px;
     margin-left: 120px;
     cursor: pointer;
 }
