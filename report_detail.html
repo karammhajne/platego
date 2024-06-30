@@ -34,12 +34,11 @@
     </header>
     <div class="container">
         <h3>Report Details</h3>
-            <div id="report-details"></div>
-            <div id="report-image"></div>
-            <div id="report-map"></div>
+        <div id="report-details"></div>
+        <div id="report-image"></div>
+        <div id="report-map"></div>
         <button id="delete-button" onclick="deleteReport()">Delete Report</button>
     </div>
-<<<<<<< HEAD
     
     <div id="confirmModal" class="modal">
         <div class="modal-content">
@@ -48,10 +47,13 @@
             <button onclick="confirmDelete()" class="btn-confirm">Yes</button>
             <button onclick="cancelDelete()" class="btn-cancel">No</button>
         </div>
-=======
-    <div class="map">
-    <img src="images/map.png" alt="map icon">
->>>>>>> 5797ae2ac334b6629a33d1b691f2b6ca6f90b239
+    </div>
+
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSuccessModal()">&times;</span>
+            <p>Deletion successful!</p>
+        </div>
     </div>
 </body>
 </html>
