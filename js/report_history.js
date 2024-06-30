@@ -125,7 +125,7 @@ function submitNewReport() {
         location: form.location.value,
         date: form.date.value,
         status: form.status.value,
-        /*urgent: form.urgent.checked,*/
+        urgent: form.urgent.checked,
         map: form.map.value
     };
 
