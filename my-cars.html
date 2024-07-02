@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script defer src="js/report_history.js"></script>
-    <title>Report History</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/my-Cars.js"></script> 
+    <title>My Cars</title>
 </head>
 <body>
     <header class="top-header">
@@ -15,7 +15,7 @@
             <i class="ring fa fa-bell"></i>
         </div>
         <div class="logo">
-            <img src="images/platego.png" alt="Plate&Go">
+            <a href="index.html"><img src="images/platego.png" alt="logo icon"></a>
         </div>
         <div class="profile">
             <span>Welcome Alon</span>
@@ -24,24 +24,27 @@
         <div class="main">
             <img src="images/search.png" alt="search icon">
             <img src="images/message.png" alt="message icon">
-            <a href="my-cars.html"><img src="images/car.png" alt="car icon"></a>  
+            <img src="images/car.png" alt="car icon">
         </div>
-        <div class="back">
-            <a href="index.html" class="back-button">
-                <i class="fa-solid fa-arrow-left"></i>
-            </a>
-        </div>
+        
+       
     </header>
-    
-    <div class="container">
-        <div class="h3">
-            <h3>Report History</h3>
-        </div>
-        <button onclick="openCreateReportModal()">Create New Report</button>
-    </div>
 
-    <div class="group">
-        <ul id="report-list"></ul>
+    <div class="rec">
+        <div class="go">
+            <a href="report_history.html" class="go-button">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a> 
+        </div>
+    <div class="text">
+        <h3>My Cars</h3>
+    </div>
+    <div class="add-car">
+        <button class="add-car-button">+</button></div>
+    </div>
+   
+    <div id="car-container" class="car-container"> 
+       
     </div>
 </body>
 </html>

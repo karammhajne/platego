@@ -1,3 +1,5 @@
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const urlParams = new URLSearchParams(window.location.search);
     const reportDetails = urlParams.get('report');
@@ -50,3 +52,5 @@ function closeSuccessModal() {
 function goBack() {
     window.history.back();
 }
+
+

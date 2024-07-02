@@ -15,7 +15,7 @@
             <i class="ring fa fa-bell"></i>
         </div>
         <div class="logo">
-            <img src="images/platego.png" alt="Plate&Go">
+            <a href="index.html"><img src="images/platego.png" alt="logo icon"></a>
         </div>
         <div class="profile">
             <span>Welcome Alon</span>
@@ -24,7 +24,9 @@
         <div class="main">
             <img src="images/search.png" alt="search icon">
             <img src="images/message.png" alt="message icon">
-            <img src="images/car.png" alt="car icon">    
+             
+            <a href="my-cars.html"><img src="images/car.png" alt="car icon"></a>     
+
         </div>
         <div class="back">
             <a href="report_history.html" class="back-button">
@@ -32,7 +34,7 @@
             </a>
         </div>
     </header>
-    <div class="container">
+    <div class="container-detail">
         <h3>Report Details</h3>
         <div id="report-details"></div>
         <div id="report-image"></div>
@@ -48,12 +50,14 @@
             <button onclick="cancelDelete()" class="btn-cancel">No</button>
         </div>
     </div>
-
+    
     <div id="successModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeSuccessModal()">&times;</span>
-            <p>Deletion successful!</p>
+            <p>Delete successful!</p>
         </div>
     </div>
 </body>
 </html>
+
+

@@ -43,29 +43,8 @@
             "status": "call done",
             "urgent": false ,
             "map": "images/map4.png"
-        },
-        {
-            "id": 5,
-            "image": "images/car5.jpg",
-            "plate": "59-69-62",
-            "reason": "car blocking",
-            "location": "Yarden 37, Ramat Gan",
-            "date": "24-2-2 09:05",
-            "status": "call done",
-            "urgent": false ,
-            "map": "images/map5.png"
-        },
-        {
-            "id": 6,
-            "image": "images/car6.png",
-            "plate": "54-05-50",
-            "reason": "child forgotten",
-            "location": "Shalom 9, Ramat Gan",
-            "date": "24-1-7 19:34",
-            "status": "call done",
-            "urgent": false ,
-            "map": "images/map6.png"
         }
+       
        
     ]
 }
