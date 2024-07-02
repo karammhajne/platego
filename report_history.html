@@ -33,36 +33,15 @@
         </a>
         </div>
     </header>
-    <div id="createReportModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeCreateReportModal()">&times;</span>
-            <h3>Create New Report</h3>
-            <form id="createReportForm">
-                <label for="image">Image URL:</label>
-                <input type="text" id="image" name="image" required><br>
-                <label for="plate">Plate:</label>
-                <input type="text" id="plate" name="plate" required><br>
-                <label for="reason">Reason:</label>
-                <input type="text" id="reason" name="reason" required><br>
-                <label for="location">Location:</label>
-                <input type="text" id="location" name="location" required><br>
-                <label for="date">Date:</label>
-                <input type="date" id="date" name="date" required><br>
-                <label for="status">Status:</label>
-                <input type="text" id="status" name="status" required><br>
-                <label for="urgent">Urgent:</label>
-                <input type="checkbox" id="urgent" name="urgent"><br>
-                <label for="map">Map URL:</label>
-                <input type="text" id="map" name="map" required><br>
-                <button type="button" onclick="submitNewReport()">Submit</button>
-            </form>
-        </div>
-    </div>
     
     <div class="container">
+        <div class="h3">
         <h3>report history</h3>
+        </div>
         <button onclick="openCreateReportModal()">Create New Report</button>
+
     </div>
+
     <div class="group">
         <ul id="report-list"></ul>
     </div>

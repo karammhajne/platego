@@ -50,3 +50,4 @@ function closeSuccessModal() {
 function goBack() {
     window.history.back();
 }
+
