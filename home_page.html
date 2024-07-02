@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plate & Go</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        .container-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+        .container {
+            width: 360px;
+            height: 640px;
+            background: url('images/map.jpeg') no-repeat center center;
+            background-size: cover;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+        .top-header {
+            height: 123px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #ccc;
+            padding: 10px 20px;
+            position: relative;
+        }
+        .top-header .menu {
+            display: flex;
+            align-items: center;
+        }
+        .top-header .menu .san {
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: -75px;
+        }
+        .top-header .menu .ring {
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: -70px;
+            margin-left: 10px;
+        }
+        .top-header .logo {
+            position: absolute;
+            top: 50%;
+            margin-top: -30px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .top-header .logo img {
+            width: 45px;
+            height: 37px;
+        }
+        .top-header .profile {
+            display: flex;
+            align-items: center;
+        }
+        .top-header .profile span {
+            font-size: 12px;
+            margin-right: 10px;
+            margin-top: -70px;
+        }
+        .top-header .profile img {
+            height: 40px;
+            width: 40px;
+            margin-right: 25px;
+            margin-top: -70px;
+            border-radius: 50%;
+        }
+        .top-header .main {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-55%);
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+        }
+        .main img {
+            height: 40px;
+            width: 40px;
+            cursor: pointer;
+        }
+        .back {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+        }
+        .back-button {
+            color: black;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+        }
+        .report-button {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: rgba(192, 192, 192, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .volunteer-updates {
+            background-color: white;
+            width: 100%;
+            max-height: 140px;
+            overflow-y: auto;
+            position: absolute;
+            bottom: 0;
+            border-top: 1px solid #ddd;
+            padding: 10px;
+        }
+        .volunteer-update {
+            padding: 5px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .volunteer-update:last-child {
+            border-bottom: none;
+        }
+        .info-button {
+            background-color: #ddd;
+            border: none;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <header class="top-header">
+                <div class="menu">
+                    <span class="san">&#9776;</span>
+                    <i class="ring fa fa-bell"></i>
+                </div>
+                <div class="logo">
+                    <img src="images/platego.png" alt="Plate&Go">
+                </div>
+                <div class="profile">
+                    <span>Welcome Alon</span>
+                    <img src="images/alon.png" alt="Profile Picture">
+                </div>
+                <div class="back">
+                    <a href="report_history.html" class="back-button">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                </div>
+                <div class="main">
+                    <img src="images/search.png" alt="search icon">
+                    <img src="images/message.png" alt="message icon">
+                    <img src="images/car.png" alt="car icon">    
+                </div>
+            </header>
+            <div class="main-content">
+                <div class="report-button" onclick="location.href='report_history.html'">Make a  <br><strong>Report</strong></div>
+            </div>
+            <div class="volunteer-updates">
+                <div class="volunteer-update">
+                    <span>Flat Tire, Japotintsky Road, Bnei Brak 06/03/24 19:14</span>
+                    <button class="info-button">i</button>
+                </div>
+                <div class="volunteer-update">
+                    <span>Engine Heat, Bialek 13, Ramat Gan. 05/03/24 17:43</span>
+                    <button class="info-button">i</button>
+                </div>
+                <div class="volunteer-update">
+                    <span>Key forgotten inside the car, Shalom 36, Holon. 05/03/24 13:35</span>
+                    <button class="info-button">i</button>
+                </div>
+                <div class="volunteer-update">
+                    <span>Empty Battery, Alenby 87, Tel Aviv. 03/03/24 22:00</span>
+                    <button class="info-button">i</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

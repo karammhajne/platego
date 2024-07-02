@@ -2,6 +2,9 @@
     "reports": [
         {
             "id": 1,
+            "model": "mazda 3 2009",
+            "color": "white",
+            "numberOfReports": "7",
             "image": "images/car1.jpg",
             "plate": "38-439-69",
             "reason": "car blocking",
@@ -13,6 +16,9 @@
         },
         {
             "id": 2,
+            "model": "mitsubishi outlander 2016",
+            "color": "silver",
+            "numberOfReports": "13",
             "image": "images/car2.jpg",
             "plate": "77-348-39",
             "reason": "child forgotten",
@@ -24,6 +30,9 @@
         },
         {
             "id": 3,
+            "model": "hyundai elantra 2017",
+            "color": "silver",
+            "numberOfReports": "24",
             "image": "images/car3.jpg",
             "plate": "54-667-37",
             "reason": "lights on",
@@ -35,6 +44,9 @@
         },
         {
             "id": 4,
+            "model": "subaru xv 2019",
+            "color": "white",
+            "numberOfReports": "9",
             "image": "images/car4.jpeg",
             "plate": "63-50-70",
             "reason": "car blocking",
@@ -44,7 +56,6 @@
             "urgent": false ,
             "map": "images/map4.png"
         }
-       
-       
+      
     ]
 }
