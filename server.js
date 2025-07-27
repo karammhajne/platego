@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const http = require('http');
 const socketio = require('socket.io');
+const path = require('path');
 
 // Load .env
 dotenv.config();
@@ -31,14 +32,14 @@ app.use((req, res, next) => {
 });
 
 // Routes
-const authRoutes = require('./routes/auth');
-const reportRoutes = require('./routes/reports');
-const chatRoutes = require('./routes/chats');
-const messageRoutes = require('./routes/messages');
-const notificationRoutes = require('./routes/notification');
-const rescueRoutes = require('./routes/rescue');
-const carRoutes = require('./routes/cars');
-const volunteerRoutes = require('./routes/volunteers');
+const authRoutes = require('./backend/routes/auth');
+const reportRoutes = require('./backend/routes/reports');
+const chatRoutes = require('./backend/routes/chats');
+const messageRoutes = require('./backend/routes/messages');
+const notificationRoutes = require('./backend/routes/notification');
+const rescueRoutes = require('./backend/routes/rescue');
+const carRoutes = require('./backend/routes/cars');
+const volunteerRoutes = require('./backend/routes/volunteers');
 
 app.use('/api/volunteer', volunteerRoutes);
 app.use('/api/cars', carRoutes);
@@ -49,6 +50,7 @@ app.use('/api/chat', chatRoutes);
 app.use('/api/message', messageRoutes);
 app.use('/api/rescue', rescueRoutes);
 
+app.use(express.static(path.join(__dirname, 'frontend')));
 // MongoDB
 mongoose.connect(process.env.MONGO_URI)
     .then(() => console.log('DB connected'))
