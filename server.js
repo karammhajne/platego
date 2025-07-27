@@ -40,6 +40,7 @@ const notificationRoutes = require("./backend/routes/notification")
 const rescueRoutes = require("./backend/routes/rescue")
 const carRoutes = require("./backend/routes/cars")
 const volunteerRoutes = require("./backend/routes/volunteers")
+const callController = require("./backend/controllers/callController")
 
 app.use("/api/volunteer", volunteerRoutes)
 app.use("/api/cars", carRoutes)
@@ -49,6 +50,9 @@ app.use("/api/auth", authRoutes)
 app.use("/api/chat", chatRoutes)
 app.use("/api/message", messageRoutes)
 app.use("/api/rescue", rescueRoutes)
+
+// Call monitoring endpoint
+app.get("/api/calls/active", callController.getActiveCalls)
 
 app.use(express.static(path.join(__dirname, "frontend")))
 
@@ -65,6 +69,7 @@ io.on("connection", (socket) => {
   // Join user room for personal notifications
   socket.on("joinUser", (userId) => {
     socket.join(`user_${userId}`)
+    socket.userId = userId
     console.log(`Socket ${socket.id} joined user room: user_${userId}`)
   })
 
@@ -85,6 +90,9 @@ io.on("connection", (socket) => {
     socket.leave(chatId)
     console.log(`Socket ${socket.id} left chat ${chatId}`)
   })
+
+  // Handle call signaling
+  callController.handleCallSignaling(io, socket)
 
   socket.on("disconnect", () => {
     console.log("Client disconnected:", socket.id)
