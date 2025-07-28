@@ -46,6 +46,7 @@ const rescueRoutes = require("./backend/routes/rescue");
 const carRoutes = require("./backend/routes/cars");
 const volunteerRoutes = require("./backend/routes/volunteers");
 const callController = require("./backend/controllers/callController");
+const userRoutes = require("./backend/routes/user");
 
 app.use("/api/volunteer", volunteerRoutes);
 app.use("/api/cars", carRoutes);
@@ -55,6 +56,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/chat", chatRoutes);
 app.use("/api/message", messageRoutes);
 app.use("/api/rescue", rescueRoutes);
+app.use("/api/user", userRoutes);
 
 // Call monitoring endpoint
 app.get("/api/calls/active", callController.getActiveCalls);
