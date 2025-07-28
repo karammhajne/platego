@@ -46,7 +46,7 @@ const rescueRoutes = require("./backend/routes/rescue");
 const carRoutes = require("./backend/routes/cars");
 const volunteerRoutes = require("./backend/routes/volunteers");
 const callController = require("./backend/controllers/callController");
-const userRoutes = require("./backend/routes/user");
+const userRoutes = require("./backend/routes/users");
 
 app.use("/api/volunteer", volunteerRoutes);
 app.use("/api/cars", carRoutes);
