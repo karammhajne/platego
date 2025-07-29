@@ -1,0 +1,97 @@
+[33md7337c6[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{0}: pull origin main: Fast-forward
+[33md964415[m HEAD@{1}: commit: volunteer availbility
+[33m592df6a[m HEAD@{2}: commit: add role to schema
+[33m2fabd3f[m HEAD@{3}: commit: Fix: added authMiddleware to users route
+[33m8fb6b38[m HEAD@{4}: commit: Fix: added authMiddleware to users route
+[33m0a97f8b[m HEAD@{5}: commit: become a volunteer button
+[33mfa3686f[m HEAD@{6}: commit: become a volunteer button
+[33m22af6e8[m HEAD@{7}: commit: become a volunteer button
+[33md728e24[m HEAD@{8}: commit: navigate button
+[33m4220d5c[m HEAD@{9}: commit: accept rescue button
+[33m22667c4[m HEAD@{10}: commit: accept rescue button
+[33m9ff0c2f[m HEAD@{11}: commit: accept rescue button
+[33mb65a52a[m HEAD@{12}: commit: accept rescue button
+[33mc221c01[m HEAD@{13}: commit: accept rescue button
+[33m09b1cf9[m HEAD@{14}: commit: accept rescue button
+[33m45c2a3d[m HEAD@{15}: commit: real time rescue notification
+[33m1471915[m HEAD@{16}: commit: rescue details
+[33m0ab3b86[m HEAD@{17}: commit: rescue details
+[33md4047f7[m HEAD@{18}: commit: rescue details
+[33m99b86e4[m HEAD@{19}: commit: rescue details in notification
+[33m0386a8d[m HEAD@{20}: pull origin main: Fast-forward
+[33m82014f1[m HEAD@{21}: commit: last message
+[33mecf19e5[m HEAD@{22}: commit: live pic
+[33m58a4c36[m HEAD@{23}: commit: pic delete
+[33md9504bf[m HEAD@{24}: commit: real time sending pics in chats
+[33m177a641[m HEAD@{25}: commit: real time sending pics in chats
+[33me4c4b28[m HEAD@{26}: commit: real time sending pics in chats
+[33m51f872a[m HEAD@{27}: commit: real time sending pics in chats
+[33mf63b195[m HEAD@{28}: commit: real time sending pics in chats
+[33m775932b[m HEAD@{29}: commit: real time sending pics in chats
+[33m20752e3[m HEAD@{30}: commit: real time sending pics in chats
+[33m9157f0b[m HEAD@{31}: commit: real time sending pics in chats
+[33ma2ec498[m HEAD@{32}: commit: real time sending pics in chats
+[33m07bc863[m HEAD@{33}: commit: last message real time
+[33md35a210[m HEAD@{34}: commit: last message real time
+[33m1b33879[m HEAD@{35}: commit: last message real time
+[33md9676f1[m HEAD@{36}: commit: last message real time
+[33m92228d2[m HEAD@{37}: commit: last message style
+[33m21841ea[m HEAD@{38}: commit: last message fetching in chat list
+[33m01c5ece[m HEAD@{39}: commit: last message fetching
+[33ma21a185[m HEAD@{40}: commit: fix number plate in chat list
+[33m7aa6b75[m HEAD@{41}: commit: fix number plate in chat list
+[33m7ae4945[m HEAD@{42}: commit: fix getchatbyid
+[33m8ddef3e[m HEAD@{43}: commit: fix chatid
+[33md8103ee[m HEAD@{44}: pull origin main: Fast-forward
+[33m0327784[m HEAD@{45}: commit: fix spilling
+[33m9cb299b[m HEAD@{46}: pull origin main: Fast-forward
+[33m3d1a748[m HEAD@{47}: pull origin main: Fast-forward
+[33mf65513d[m HEAD@{48}: pull origin main: Fast-forward
+[33m45dd397[m HEAD@{49}: commit (merge): report fetch fixed
+[33m6e80a85[m HEAD@{50}: commit: report fetch fixed
+[33m6526a78[m HEAD@{51}: commit (merge): report fetch fixed
+[33mf2ed0e2[m HEAD@{52}: commit: report fetch fixed
+[33mfde7a6e[m HEAD@{53}: pull origin main: Fast-forward
+[33m1e0d62f[m HEAD@{54}: commit: add car id
+[33mb823dd1[m HEAD@{55}: commit: add car id to new chat func
+[33mc871145[m HEAD@{56}: commit: change chat path
+[33m2a14f2a[m HEAD@{57}: pull origin main: Fast-forward
+[33m343df39[m HEAD@{58}: pull origin main: Fast-forward
+[33m4cfff73[m HEAD@{59}: pull origin main: Fast-forward
+[33m378764b[m HEAD@{60}: pull origin main: Fast-forward
+[33m421fd55[m HEAD@{61}: pull origin main: Fast-forward
+[33m58c4636[m HEAD@{62}: reset: moving to origin/main
+[33m9f316c4[m HEAD@{63}: commit: fix cors
+[33maec0e44[m HEAD@{64}: commit: mongo uri change
+[33md05d7c4[m HEAD@{65}: reset: moving to origin/main
+[33m257249f[m HEAD@{66}: pull origin main: updating HEAD
+[33m257249f[m HEAD@{67}: merge origin/main: updating HEAD
+[33m257249f[m HEAD@{68}: checkout: moving from main to main
+[33m257249f[m HEAD@{69}: commit: mongo uri change
+[33ma34e8de[m HEAD@{70}: commit: mongo uri change
+[33m3dbd2ea[m HEAD@{71}: commit: fix name
+[33m3c9dd57[m HEAD@{72}: pull origin main: Fast-forward
+[33mc794a53[m HEAD@{73}: commit: config file added
+[33ma65eac8[m HEAD@{74}: commit (merge): Report model change
+[33m38e3d80[m HEAD@{75}: Branch: renamed refs/heads/main to refs/heads/main
+[33m38e3d80[m HEAD@{77}: Branch: renamed refs/heads/main to refs/heads/main
+[33m38e3d80[m HEAD@{79}: commit: Initial commit
+[33m54375e5[m HEAD@{80}: commit: connectt
+[33m5f3df8c[m HEAD@{81}: commit: connect
+[33m77ae0a9[m HEAD@{82}: Branch: renamed refs/heads/main to refs/heads/main
+[33m77ae0a9[m HEAD@{84}: commit (merge): final final
+[33m28d7f65[m HEAD@{85}: commit: final final
+[33m340263f[m HEAD@{86}: commit: final
+[33mb87995e[m HEAD@{87}: commit (merge): create report added
+[33mf08ab08[m HEAD@{88}: commit: create report added
+[33ma632ebf[m HEAD@{89}: commit: page 2 modal
+[33m1e703b4[m HEAD@{90}: commit: page 2 change updated
+[33m9e4a6b0[m HEAD@{91}: commit: page 2 updated
+[33mfc90225[m HEAD@{92}: commit: page 2 added
+[33m6d87d2f[m HEAD@{93}: commit (merge): 3 updated
+[33m1becd20[m HEAD@{94}: commit: 2 updated
+[33mace6142[m HEAD@{95}: commit (merge): updated
+[33m7703642[m HEAD@{96}: commit: updated
+[33m31caa03[m[33m ([m[1;32morigin[m[33m)[m HEAD@{97}: commit: updated
+[33m3821bd6[m HEAD@{98}: commit: updated
+[33mec81bda[m HEAD@{99}: commit (initial): add all files
