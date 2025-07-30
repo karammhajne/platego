@@ -21,6 +21,7 @@ const io = socketio(server, {
   },
 });
 
+app.set('io', io);
 // Middleware
 app.use(cors({
   origin: "*",
