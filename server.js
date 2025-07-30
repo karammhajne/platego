@@ -20,7 +20,6 @@ const io = socketio(server, {
     methods: ["GET", "POST"],
   },
 });
-
 app.set('io', io);
 // Middleware
 app.use(cors({
