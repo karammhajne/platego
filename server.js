@@ -71,14 +71,11 @@ mongoose
 
 // Socket.IO listeners
 io.on("connection", (socket) => {
-  console.log("Client connected:", socket.id);
-
-  // Join user room for personal notifications
-  socket.on("joinUser", (userId) => {
+    socket.on('joinUser', userId => {
     socket.join(`user_${userId}`);
-    socket.userId = userId;
-    console.log(`Socket ${socket.id} joined user room: user_${userId}`);
+    console.log(`🟢 Socket ${socket.id} joined room user_${userId}`);
   });
+
 
   // Join volunteer room
   socket.on("joinAsVolunteer", () => {
