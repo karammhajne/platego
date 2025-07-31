@@ -37,16 +37,16 @@ app.use((req, res, next) => {
 });
 
 // Routes
-const authRoutes = require("./backend/routes/auth");
-const reportRoutes = require("./backend/routes/reports");
-const chatRoutes = require("./backend/routes/chats");
-const messageRoutes = require("./backend/routes/messages");
-const notificationRoutes = require("./backend/routes/notification");
-const rescueRoutes = require("./backend/routes/rescue");
-const carRoutes = require("./backend/routes/cars");
-const volunteerRoutes = require("./backend/routes/volunteers");
-const callController = require("./backend/controllers/callController");
-const userRoutes = require("./backend/routes/users");
+const authRoutes = require("./routes/auth");
+const reportRoutes = require("./routes/reports");
+const chatRoutes = require("./routes/chats");
+const messageRoutes = require("./routes/messages");
+const notificationRoutes = require("./routes/notification");
+const rescueRoutes = require("./routes/rescue");
+const carRoutes = require("./routes/cars");
+const volunteerRoutes = require("./routes/volunteers");
+const callController = require("./controllers/callController");
+const userRoutes = require("./routes/users");
 
 app.use("/api/volunteer", volunteerRoutes);
 app.use("/api/cars", carRoutes);
@@ -61,7 +61,6 @@ app.use("/api/user", userRoutes);
 // Call monitoring endpoint
 app.get("/api/calls/active", callController.getActiveCalls);
 
-app.use(express.static(path.join(__dirname, "frontend")));
 
 // MongoDB
 mongoose
